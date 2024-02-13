@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: lightslategray;
+  }
+  
+  h1 {
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  div {
+    background-color: gray;
+    border-color: black;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(14, 214, 74, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background: lightgray;
+    border-color: black;
+  }
+  
+  form {
+    margin-top: 10px;
+  }
+  
+  span {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  #transferForm button {
+    background-color: #2ecc71;
+  }
+  
+  #transferForm button:hover {
+    background-color: #27ae60;
+  }

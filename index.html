@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Oracle Network</title>
+  <link rel="shortcut icon" type="image/x-icon" href="privacyoracle/image/logo-white.png"/>
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+  <script src="script.js"></script>  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Pricing Oracle Network</h1>
+
+  <button onclick="connectMetamask()">Connect to MetaMask</button>
+
+  <!-- Add an element with the id 'interaction' -->
+  <div id="interaction" style="display: none;">
+    <!-- This is content related to your smart contract interaction -->
+    <p><strong> Chain Logic Labs </strong></p>
+
+    <div>
+      <h2>Account Information</h2>
+      <p><strong>Account:</strong> <span id="account"></span></p>
+      <p><strong>Balance:</strong> <span id="balance"></span></p>
+      <input type="text" id="checkAssetInput" placeholder="Enter asset to check">
+      <button onclick="checkPrices()">Check Price</button>
+      <p><strong></strong> <span id="currentPriceAsset"></span></p>
+      <p><strong></strong> <span id="proposedPriceAsset"></span></p>
+    </div>
+
+    <h2>Proposed Asset Prices</h2>
+    <p>Signers are Relayers</p>
+    <label for="assetInput">Asset:</label>
+    <input type="text" id="assetInput" placeholder="Asset" oninput="capitalizeFirstLetter()">
+
+    <label for="priceInput">Price:</label>
+    <input type="number" id="priceInput" placeholder="Price" min="1">
+
+    <button onclick="becomeSigner()">Become a Signer</button>
+    <button onclick="updatePrice()">Update Price</button>
+    <button onclick="claimReward()">Claim Reward</button>
+
+    <!-- Retrieve Data Section -->
+    <div class="interaction-section">
+
+  <div>
+    <!-- Form for Transfer Tokens -->
+    <form id="transferForm">
+      <h3>Transfer</h3>
+      <label for="recipientAddress">Recipient Address:</label>
+      <input type="text" id="recipientAddress" placeholder="Recipient Address" required>
+    
+      <label for="transferAmount">Amount to Transfer:</label>
+      <input type="number" id="transferAmount" placeholder="Amount" min="1" required>
+    
+      <button type="button" onclick="transferTokens()">Transfer Tokens</button>
+    </form>
+    <p>@ChainLogicLabs 2024</p>
+  </div>
+</div>
+</body>
+</html>
